@@ -320,8 +320,8 @@ img#impresoraButton {
            <table class="table">
             <tbody id="tablaBody">
                 <tr class="table-header">
-    <th><h2>Qty</h2></th>
-    <th><h2>Items</h2></th>
+    <th><h2 style="text-align: left;">Qty</h2></th>
+    <th><h2 style="text-align: left;">Items</h2></th>
     <th><h2>Price</h2></th>
     <th><h2>Subtotal</h2></th> <!-- Nueva columna para Subtotal -->
                  </tr>
@@ -342,7 +342,7 @@ img#impresoraButton {
     var subtotal = row.qty * parseFloat(row.price);
     
     newRow.innerHTML = `
-       <td class="item" style="text-align: right;">${row.qty}</td>
+       <td class="item" style="text-align: left;">${row.qty}</td>
         <td class="item" style="text-align: left;">${row.items}</td>
         <td class="item" style="text-align: right;">${row.price}</td> <!-- Alinea a la derecha -->
         <td class="item" style="text-align: right;">${subtotal}</td> <!-- Alinea a la derecha -->
