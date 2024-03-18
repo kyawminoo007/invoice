@@ -312,13 +312,7 @@ img#impresoraButton {
                <p id="contact">
                 <br>
         </div>
-        
-        <div class="ticket">
-        <br>
-          <h1 class="nro_boleta" id="invoice_id"></h1>
-       <br>
-     
-         </div>
+      
        
            <table class="table">
             <tbody id="tablaBody">
@@ -440,6 +434,10 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
             <br>
             <h1 class="date" id="date"></h1>
             <h1 class="date" id="now"></h1>
+           <tr class="table-footer">
+                    <td class=""colspan="3"><h2 id="now"></h2></td>
+                    <td colspan="3"><h2 id="invoice_id"></h2></td>
+                </tr> 
 
     </div>
     <script>
