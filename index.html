@@ -262,7 +262,6 @@ img#impresoraButton {
         var payment = params.has('payment') ? params.get('payment') : " ";
         var balance = params.has('balance') ? params.get('balance') : " ";
         var clinic = params.has('clinic') ? params.get('clinic') : " ";
-        var now = params.has('now') ? params.get('now') : " ";
         var address = params.has('address') ? params.get('address') : " ";
         var phone = params.has('phone') ? params.get('phone') : " ";
         
@@ -438,7 +437,7 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
                     Good Solds are not exchangable</b>
             </p>
             <br>
-            <h1 class="date" id="now"></h1>
+            <h1 class="date" id="date"></h1>
 
     </div>
     <script>
@@ -448,7 +447,6 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
         var paymentElement = document.getElementById("payment").textContent = payment;
         var balanceElement = document.getElementById("balance").textContent = balance;
         var clinic = document.getElementById("clinic").textContent = clinic;
-        var now = document.getElementById("now").textContent = now;
         var sub_total = document.getElementById("sub_total").textContent = sub_total;
         var address = document.getElementById("address").textContent = address;
         var phone = document.getElementById("phone").textContent = phone;
