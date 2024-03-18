@@ -263,7 +263,7 @@ img#impresoraButton {
         var balance = params.has('balance') ? params.get('balance') : " ";
         var clinic = params.has('clinic') ? params.get('clinic') : " ";
         var address = params.has('address') ? params.get('address') : " ";
-        var phone = params.has('phone') ? params.get('phone') : " ";
+        var contact = params.has('contact') ? params.get('contact') : " ";
         
         //Recibe los datos de los servicios (separados por comas)
         var qty = params.has('qty') ? params.get('qty') : "";
@@ -306,9 +306,9 @@ img#impresoraButton {
             <p class="info-tienda">
                 <p id="clinic">
                 <br>
-               <p 56 Ward, South Dagon Township>
+               <p id="address">
                 <br>
-               <p Tele: 09-444018509>
+               <p id="contact">
                 <br>
         </div>
         
@@ -449,7 +449,7 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
         var clinic = document.getElementById("clinic").textContent = clinic;
         var sub_total = document.getElementById("sub_total").textContent = sub_total;
         var address = document.getElementById("address").textContent = address;
-        var phone = document.getElementById("phone").textContent = phone;
+        var contact = document.getElementById("contact").textContent = contact;
     
       </script>   
 
