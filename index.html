@@ -311,6 +311,7 @@ img#impresoraButton {
                 <br>
                <p id="contact">
                 <br>
+                  <h1 class="nro_boleta" id="invoice_id"></h1>
         </div>
       
        
@@ -420,8 +421,6 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
                  <tr class="table-footer">
                     <td class=""colspan="3">Balance</td>
                     <td colspan="3"><h2 id="balance"></h2></td>
-                    <td class=""colspan="3">Now</td>
-                    <td colspan="3"><h2 id="now"></h2></td>
                 </tr> 
             </tbody>
         </table>
@@ -446,6 +445,8 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
         var address = document.getElementById("address").textContent = address;
         var contact = document.getElementById("contact").textContent = contact;
         var now = document.getElementById("now").textContent = now;
+        var sub_total = document.getElementById("sub_total").textContent = sub_total;
+
 
       </script>   
 
