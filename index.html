@@ -311,7 +311,7 @@ img#impresoraButton {
                 <br>
                <p id="contact">
                 <br>
-                <h1 class="nro_boleta" id="date"></h1>
+                <h1 class="nro_boleta" id="invoice_id"></h1> / <h1 class="nro_boleta" id="now"></h1>
         </div>
       
        
@@ -431,12 +431,7 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
                 <b>
                     Good Solds are not exchangable</b></p>
             <br>
-          <td>Invoice No</td>
-          <td class=""colspan="4"><h2 id="invoice_id"></h2></td>
-          <br>
-       
-         
-
+              
     </div>
     <script>
         var invoiceElement = document.getElementById("invoice_id").textContent = invoice;
