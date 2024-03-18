@@ -264,7 +264,7 @@ img#impresoraButton {
         var clinic = params.has('clinic') ? params.get('clinic') : " ";
         var address = params.has('address') ? params.get('address') : " ";
         var contact = params.has('contact') ? params.get('contact') : " ";
-        var now = params.has('now') ? params.get('now') : " ";
+        var text = params.has('text') ? params.get('text') : " ";
         
         //Recibe los datos de los servicios (separados por comas)
         var qty = params.has('qty') ? params.get('qty') : "";
@@ -431,7 +431,9 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
         <div class="policy">
             <p class="policy-title">
                 <b>
-                    Good Solds are not exchangable</b></p>
+                    Good Solds are not exchangable</b>
+            <h2 id="text"></h2>
+            </p>
             <br>
               
     </div>
@@ -444,7 +446,7 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
         var clinic = document.getElementById("clinic").textContent = clinic;
         var address = document.getElementById("address").textContent = address;
         var contact = document.getElementById("contact").textContent = contact;
-        var now = document.getElementById("now").textContent = now;
+        var text = document.getElementById("text").textContent = text;
         var sub_total = document.getElementById("sub_total").textContent = sub_total;
 
 
