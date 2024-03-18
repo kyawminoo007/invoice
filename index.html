@@ -257,6 +257,8 @@ img#impresoraButton {
         // Obtener los valores de los parámetros
         var invoice = params.has('invoice') ? params.get('invoice') : "---";
         var date = params.has('date') ? params.get('date') : "dd/mm/aaaa";
+        var customer = params.has('customer') ? params.get('customer') : " ";
+        var phone = params.has('phone') ? params.get('phone') : " ";
         var total = params.has('total') ? params.get('total') : "";
         var sub_total = params.has('sub_total') ? params.get('sub_total') : " ";
         var payment = params.has('payment') ? params.get('payment') : " ";
@@ -324,6 +326,12 @@ img#impresoraButton {
     <td></td>
     <td></td>
     <td class="nro_boleta" id="date"></td>
+</tr>
+ <tr>
+    <td style="text-align: left;">Customer</td>
+    <td class="nro_boleta" id="customer"></td>
+    <td style="text-align: left;">Phone</td>
+    <td class="nro_boleta" id="phone"></td>
 </tr>
 </table>
           <br>
@@ -451,6 +459,8 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
     <script>
         var invoiceElement = document.getElementById("invoice_id").textContent = invoice;
         var dateElement = document.getElementById("date").textContent = date;
+        var customer = document.getElementById("customer").textContent = customer;
+        var phone = document.getElementById("phone").textContent = phone;
         var totalElement = document.getElementById("total").textContent = total;
         var paymentElement = document.getElementById("payment").textContent = payment;
         var balanceElement = document.getElementById("balance").textContent = balance;
